@@ -1,0 +1,387 @@
+{
+	"info": {
+		"_postman_id": "318467c2-6218-46da-88f1-75581cc8717e",
+		"name": "MICROAPP-LUMEN",
+		"description": "MICRO APP FRAMEWORK LUMEN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "EXEMPLES",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpbiI6InVzZXIudGVzdCIsInBhc3N3b3JkIjoiMTIzIn0.Mciycwd_xbyMIbIVLBslassEk7ZFo5UyBB7lr6QEl70",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://microapp-lumen.dev.com/api/v1/exemples",
+					"protocol": "http",
+					"host": [
+						"microapp-lumen",
+						"dev",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"exemples"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FORM CREATE EXEMPLE",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpbiI6InVzZXIudGVzdCIsInBhc3N3b3JkIjoiMTIzIn0.Mciycwd_xbyMIbIVLBslassEk7ZFo5UyBB7lr6QEl70",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://microapp-lumen.dev.com/api/v1/exemples/create",
+					"protocol": "http",
+					"host": [
+						"microapp-lumen",
+						"dev",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"exemples",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FORM EDIT EXEMPLE",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpbiI6InVzZXIudGVzdCIsInBhc3N3b3JkIjoiMTIzIn0.Mciycwd_xbyMIbIVLBslassEk7ZFo5UyBB7lr6QEl70",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://microapp-lumen.dev.com/api/v1/exemples/1/edit",
+					"protocol": "http",
+					"host": [
+						"microapp-lumen",
+						"dev",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"exemples",
+						"1",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE EXEMPLE",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpbiI6InVzZXIudGVzdCIsInBhc3N3b3JkIjoiMTIzIn0.Mciycwd_xbyMIbIVLBslassEk7ZFo5UyBB7lr6QEl70",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Lero Lero\",\n\t\"description\":\"Lero Lero\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://microapp-lumen.dev.com/api/v1/exemples/2",
+					"protocol": "http",
+					"host": [
+						"microapp-lumen",
+						"dev",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"exemples",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE EXEMPLE",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpbiI6InVzZXIudGVzdCIsInBhc3N3b3JkIjoiMTIzIn0.Mciycwd_xbyMIbIVLBslassEk7ZFo5UyBB7lr6QEl70",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Lero Lero\",\n\t\"description\":\"Lero Lero\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://microapp-lumen.dev.com/api/v1/exemples/2",
+					"protocol": "http",
+					"host": [
+						"microapp-lumen",
+						"dev",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"exemples",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "STORE EXEMPLE",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpbiI6InVzZXIudGVzdCIsInBhc3N3b3JkIjoiMTIzIn0.Mciycwd_xbyMIbIVLBslassEk7ZFo5UyBB7lr6QEl70",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Exemple code 1\",\n\t\"description\":\"Description code 1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://microapp-lumen.dev.com/api/v1/exemples",
+					"protocol": "http",
+					"host": [
+						"microapp-lumen",
+						"dev",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"exemples"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SEARCH EXEMPLES",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpbiI6InVzZXIudGVzdCIsInBhc3N3b3JkIjoiMTIzIn0.Mciycwd_xbyMIbIVLBslassEk7ZFo5UyBB7lr6QEl70",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Exemple\",\n\t\"description\":\"\",\n\t\"order_by_columns\":{\"name\":\"asc\",\"description\":\"asc\"}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://microapp-lumen.dev.com/api/v1/exemples/search",
+					"protocol": "http",
+					"host": [
+						"microapp-lumen",
+						"dev",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"exemples",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "APP VERSION",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://microapp-lumen.dev.com/app/version",
+					"protocol": "http",
+					"host": [
+						"microapp-lumen",
+						"dev",
+						"com"
+					],
+					"path": [
+						"app",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "APP KEY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://microapp-lumen.dev.com/app/key/generate",
+					"protocol": "http",
+					"host": [
+						"microapp-lumen",
+						"dev",
+						"com"
+					],
+					"path": [
+						"app",
+						"key",
+						"generate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "APP ACCESS TOKEN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"login\":\"user.test\",\n\t\"password\":\"123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://microapp-lumen.dev.com/app/access/token/generate",
+					"protocol": "http",
+					"host": [
+						"microapp-lumen",
+						"dev",
+						"com"
+					],
+					"path": [
+						"app",
+						"access",
+						"token",
+						"generate"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
