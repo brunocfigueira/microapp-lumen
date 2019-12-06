@@ -7,6 +7,8 @@ use Illuminate\Contracts\Auth\Factory as Auth;
 use \Illuminate\Http\Request;
 use \App\Http\IHttpCode;
 use \App\Http\IHttpRoutes;
+use App\Services\UserService;
+use \Firebase\JWT\JWT;
 
 class Authenticate implements IHttpCode, IHttpRoutes
 {
@@ -38,15 +40,16 @@ class Authenticate implements IHttpCode, IHttpRoutes
     public function handle(Request $request, Closure $next, $guard = null)
     {
 
-        // check the URIs exceptions
-        if ($request->is($this::ROUTES_EXCEPT)) {
-            return $next($request);
-        }
+        // check the URIs exceptions for global middleware
+        // enable only when to going enable $app->middleware
+        // if ($request->is($this::ROUTES_EXCEPT)) {
+        //     return $next($request);
+        // }
         // check header Authorization or Bearer token
         if ($request->hasHeader('Authorization') == false || $request->bearerToken() == false) {
             return responder()->error('unauthorized')->respond($this::COD_UNAUTHORIZED);
         }
-
+                
         if ($this->auth->guard($guard)->guest()) {
             return responder()->error('unauthorized')->respond($this::COD_UNAUTHORIZED);
         }

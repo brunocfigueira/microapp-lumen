@@ -65,12 +65,15 @@ $app->singleton(
 // $app->middleware([
 //     App\Http\Middleware\ExampleMiddleware::class
 // ]);
-$app->middleware([
-    App\Http\Middleware\Authenticate::class
-]);
+// $app->middleware([
+//     App\Http\Middleware\Authenticate::class
+// ]);
 
+// $app->routeMiddleware([
+//     'auth' => App\Http\Middleware\Authenticate::class,
+// ]);
 $app->routeMiddleware([
-    'auth' => App\Http\Middleware\Authenticate::class,
+    'auth' => App\Http\Middleware\AuthCustomMiddleware::class,
 ]);
 
 /*
@@ -91,6 +94,7 @@ $app->register(Appzcoder\LumenRoutesList\RoutesCommandServiceProvider::class);
 $app->register(Flugg\Responder\ResponderServiceProvider::class);
 $app->register(Yajra\Oci8\Oci8ServiceProvider::class);
 $app->register(Aws\Laravel\AwsServiceProvider::class);
+
 
 
 /*
